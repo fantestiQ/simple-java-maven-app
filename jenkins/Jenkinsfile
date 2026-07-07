@@ -1,5 +1,8 @@
 pipeline {
     agent any
+     tools {
+        maven 'Maven1'
+    }
     options {
         skipStagesAfterUnstable()
     }
